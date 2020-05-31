@@ -19,7 +19,7 @@ namespace clock_angle
 
             clocks.ForEach(clock =>
             {
-                Console.WriteLine("At time {0}:{1}am/pm", clock.hourHand, clock.minuteHand);
+                Console.WriteLine(clock);
 
                 //Call for acute angle
                 Console.WriteLine("Acute: {0} degrees", clock.findAngle());

@@ -51,6 +51,9 @@ namespace clock_angle
             return acute == true && (angle <= wholeClockDegrees / 2) ? angle : (wholeClockDegrees - angle);
         }
 
+        public override string ToString(){
+            return $"At time {this.hourHand}:{this.minuteHand}am/pm";
+        }
         private float findSegments(int hand)
         {
             //5 minutes in one segement
@@ -61,6 +64,8 @@ namespace clock_angle
         {  
             return segments * (wholeClockDegrees / clockSegments);
         }
+
+
 
     }
 }
